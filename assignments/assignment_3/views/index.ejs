@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <title>First EJS APP</title>
+    <style>
+      .container{
+         width:auto;
+         height: 80px;
+         margin-bottom: 20px;
+         background-color: darkkhaki;
+         border: solid black 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+
+      <% users.forEach(user =>{%>
+      <div class="container">
+        <h3><%= user.name %></h3>
+        <h3><%= user.email %></h3>
+      </div>
+      <%})%>
+    </div>
+    <div>
+      
+    <a href = "/form">Add user</a>
+
+      
+        
+        
+    </div>
+  </body>
+</html>
