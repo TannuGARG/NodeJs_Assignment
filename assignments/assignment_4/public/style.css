@@ -1,0 +1,12 @@
+.heading{
+    background-color: blueviolet;
+    color: white;
+    height: 80px;
+    text-align: center;
+}
+.promoted{
+    color: green;
+}
+.notpromoted{
+    color: red;
+}

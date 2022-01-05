@@ -22,5 +22,5 @@ Instructions
 * Now you should be able to see the new user added on you screen
 
 <br/>
-
-Run the test cases using ```npm run test:file assignment_3``` to see if you code is fine
+npm run test:file assignment_3
+Run the test cases using `````` to see if you code is fine

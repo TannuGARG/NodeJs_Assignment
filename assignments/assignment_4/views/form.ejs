@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- <style>
+        .heading{
+            background-color: blueviolet;
+            color: white;
+            height: 80px;
+            text-align: center;
+        }
+        .promoted{
+            color: green;
+        }
+        .notpromoted{
+            color: red;
+        }
+    </style> -->
+    
+</head>
+<body>
+    <div class="heading">
+        <h1>User List</h1>
+
+    </div>
+
+        <% data.forEach(User =>{%>
+            <div class="container">
+              <h3><%= User.name %></h3>
+              <p><%= User.email %></p>
+              <%if(User.isPromoted ){%>
+                <p class = "promoted"><%= User.isPromoted %></p>
+              <%} else { %>
+                <p class="notpromoted"><%= User.isPromoted %></p>
+                <%} %>
+              <form method="POST" action="/User/<%= User._id %>/update?_method=PUT">
+                <button>PROMOTE</button>
+              </form>
+              <br>
+              <form method="POST" action="/User/<%= User._id %>/delete?_method=DELETE">
+                <button>DELETE USER</button>
+              </form>  
+              <hr>
+              
+            </div>
+        </div>
+            <%})%>
+     
+</body>
+</html>
