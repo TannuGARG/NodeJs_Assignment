@@ -1,0 +1,22 @@
+.Main{
+    background-color: rgb(185, 176, 176);
+    width: 15%;
+    margin-left: 550px;
+    margin-top: 150px;
+}
+.box1{
+    margin:10px;
+}
+.Main h3{
+    text-align: center;
+}
+.profile img{
+    border-radius: 50%;
+}
+.content{
+    margin-left: 400px;
+    
+}
+body{
+    background-color: bisque;
+}
